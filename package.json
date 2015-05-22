@@ -1,0 +1,38 @@
+{
+  "name": "webpack-nano-logs",
+  "version": "1.0.0",
+  "description": "Minimal webpack build logs",
+  "keywords": [
+    "webpack",
+    "log",
+    "logger"
+  ],
+  "author": "Maxime Thirouin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MoOx/webpack-nano-logs.git"
+  },
+  "homepage": "https://github.com/MoOx/webpack-nano-logs",
+  "bugs": {
+    "url": "https://github.com/MoOx/webpack-nano-logs/issues"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "dist"
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "nano-logger": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel": "^5.4.7",
+    "babel-eslint": "^3.1.7"
+  },
+  "scripts": {
+    "prepublish": "babel src --out-dir dist",
+    "test": "babel-node __tests__"
+  }
+}
